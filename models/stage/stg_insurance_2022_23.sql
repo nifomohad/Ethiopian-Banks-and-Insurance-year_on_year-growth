@@ -1,0 +1,18 @@
+select [EPS]
+      ,[ROA]
+      ,[ROE]
+      ,[S/N]
+      ,[Insurers] as Insurances -- Changed from Insurers to Insurances
+      ,[Total Asset]
+      ,[Total Capital]
+      ,[Paid-up Capital]
+      ,[Profit before tax]
+      ,[Profit for the year]
+      ,[Total Asset in 'USD']
+      ,[Total Capital in 'USD']
+      ,[Paid-up Capital in 'USD']
+      ,[Profit before tax in 'USD']
+      ,[Profit for the year in 'USD']
+      ,[comprehensive income for the year]
+      ,[comprehensive income for the year in 'USD']
+from {{ source('bank_source', 'Insurance 2022 2023') }}

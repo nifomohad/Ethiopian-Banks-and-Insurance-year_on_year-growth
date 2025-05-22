@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: bank_source
+    description: "This is the source table for bank data"
+    database: airbyte_dest 
+    schema: finance 
+    tables:
+      - name: Banks 2022 2023
+      - name: Banks 2023 2024 
+      - name: Insurance 2022 2023
+      - name: Insurance 2023 2024
+      
+
+ 
