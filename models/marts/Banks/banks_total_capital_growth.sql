@@ -1,0 +1,11 @@
+select
+    banks,
+    total_capital_2023,
+    total_capital_2024,
+    total_capital_2024 - total_capital_2023 as diff_total_capital,
+    concat(
+        round(((total_capital_2024-total_capital_2023) / total_asset_2023) * 100, 2),
+        '%'
+    ) as percent_total_capital
+from {{ ref('int_banks_yoy_comparison') }}
+where paid_up_capital_2023 is not null
