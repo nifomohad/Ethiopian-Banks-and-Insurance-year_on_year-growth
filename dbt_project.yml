@@ -34,7 +34,10 @@ models:
     # Config indicated by + and applies to all files under models/example/
     stage:
       +materialized: view
+      +schema: stage
     intermediate:
-      +materialized: view
+      +materialized: table
+      +schema: intermediat
     marts:
-      +materialized: view
+      +materialized: table
+      +schema: marts
