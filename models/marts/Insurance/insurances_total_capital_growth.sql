@@ -1,5 +1,5 @@
 select
-    banks,
+    Insurances,
     total_capital_2023,
     total_capital_2024,
     total_capital_2024 - total_capital_2023 as diff_total_capital,

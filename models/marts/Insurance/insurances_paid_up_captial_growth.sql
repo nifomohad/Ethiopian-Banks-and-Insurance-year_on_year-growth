@@ -1,5 +1,5 @@
 select
-    Banks,
+    Insurances,
     paid_up_capital_2023,
     paid_up_capital_2024,
     paid_up_capital_2024 - paid_up_capital_2023 as diff_paid_up_capital,
