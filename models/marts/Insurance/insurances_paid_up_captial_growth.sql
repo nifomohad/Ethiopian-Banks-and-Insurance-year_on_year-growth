@@ -8,6 +8,6 @@ select
         '%'
     ) as percent_paid_up_capital
 
-    from {{ ref('int_banks_yoy_comparison') }}
+    from {{ ref('int_insurances_yoy_comparison') }}
     where paid_up_capital_2023 is not null
     
