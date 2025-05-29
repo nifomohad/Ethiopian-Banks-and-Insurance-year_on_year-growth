@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: banks_asset_growth_comparison 
+    description: "This model compares asset growth of banks over two years"
+  - name: banks_paid_up_capital_growth
+    description: "This model compares paid-up capital growth of banks over two years"
+  - name: banks_total_capital_growth
+    description: "This model compares total capital growth of banks over two years"
+  - name: insurances_asset_growth
+    description: "This model compares asset growth of insurances companies over two years"
+  - name: insurances_paid_up_captial_growth
+    description: "This model compares paid-up capital growth of insurances companies over two years"
+  - name: insurances_total_capital_growth 
+    description: "This model compares total capital growth of insurances companies over two years"
+ 

@@ -5,7 +5,7 @@ with banks_2023 as (
         CAST(REPLACE([Total Asset], ',', '') AS FLOAT) as total_asset_2023,
         CAST(REPLACE([Paid-up Capital], ',', '') AS FLOAT) as paid_up_capital_2023,
         CAST(REPLACE([Total Capital], ',', '') AS FLOAT) as total_capital_2023
-    from {{ source('bank_source', 'Banks 2022 2023') }}
+    from {{ ref('stg_bank_2022_23') }}
 ),
 
 banks_2024 as (
@@ -15,7 +15,7 @@ banks_2024 as (
         CAST(REPLACE([Total Asset], ',', '') AS FLOAT) as total_asset_2024,
         CAST(REPLACE([Paid-up Capital], ',', '') AS FLOAT) as paid_up_capital_2024,
         CAST(REPLACE([Total Capital], ',', '') AS FLOAT) as total_capital_2024
-    from {{ source('bank_source', 'Banks 2023 2024') }}
+    from {{ ref('stg_bank_2023_24') }}
 )
 select 
     b2023.[Banks],
