@@ -1,20 +1,20 @@
 version: 2
 #sources from sqlserver
 sources:
-  - name: bank_source
-    description: "This is the source table for Banks and Insurances data"
-    database: airbyte_dest 
-    schema: finance 
-    tables:
-      - name: Banks 2022 2023
-        description: "This table contains data for banks for the years 2022 and 2023"
+  # - name: bank_source
+  #   description: "This is the source table for Banks and Insurances data"
+  #   database: airbyte_dest 
+  #   schema: finance 
+  #   tables:
+  #     - name: Banks 2022 2023
+  #       description: "This table contains data for banks for the years 2022 and 2023"
       
-      - name: Banks 2023 2024 
-        description: "This table contains data for banks for the years 2023 and 2024"
-      - name: Insurance 2022 2023
-        description: "This table contains data for insurances for the years 2022 and 2023"
-      - name: Insurance 2023 2024
-        description: "This table contains data for insurances for the years 2023 and 2024"
+  #     - name: Banks 2023 2024 
+  #       description: "This table contains data for banks for the years 2023 and 2024"
+  #     - name: Insurance 2022 2023
+  #       description: "This table contains data for insurances for the years 2022 and 2023"
+  #     - name: Insurance 2023 2024
+  #       description: "This table contains data for insurances for the years 2023 and 2024"
       
 
 

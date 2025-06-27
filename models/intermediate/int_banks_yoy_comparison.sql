@@ -3,7 +3,7 @@ with banks_2023 as (
         Banks,
         {{TO_FLOAT('Total_Asset')}} as total_asset_2023,
         {{TO_FLOAT('Paid_up_Capital')}} as paid_up_capital_2023,
-        {{TO_FLOAT('Total_Capital')}} as total_capital_2023
+        {{TO_FLOAT('Total_Capital_in_USD')}} as total_capital_in_USD_2023
         -- CAST(REPLACE(CAST(Total_Asset AS STRING), ',', '') AS FLOAT) as total_asset_2023,
         -- CAST(REPLACE(CAST(Paid_up_Capital AS STRING), ',', '') AS FLOAT) as paid_up_capital_2023,
         -- CAST(REPLACE(CAST(Total_Capital AS STRING), ',', '') AS FLOAT) as total_capital_2023
@@ -15,7 +15,7 @@ banks_2024 as (
         Banks,
         {{TO_FLOAT('Total_Asset') }}as total_asset_2024,
         {{TO_FLOAT('Paid_up_Capital')}} as paid_up_capital_2024,
-        {{TO_FLOAT('Total_Capital')}} as total_capital_2024
+        {{TO_FLOAT('Total_Capital_in_USD')}} as total_capital_in_USD_2024
         --
         -- CAST(REPLACE(CAST(Total_Asset AS STRING), ',', '') AS FLOAT) as total_asset_2024,
         -- CAST(REPLACE(CAST(Paid_up_Capital AS STRING), ',', '') AS FLOAT) as paid_up_capital_2024,
@@ -29,8 +29,8 @@ select
     b2024.total_asset_2024,
     b2023.paid_up_capital_2023,
     b2024.paid_up_capital_2024,
-    b2023.total_capital_2023,
-    b2024.total_capital_2024
+    b2023.total_capital_in_USD_2023,
+    b2024.total_capital_in_USD_2024
 from banks_2023 b2023
 join banks_2024 b2024 
     on b2023.Banks = b2024.Banks
