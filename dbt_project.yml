@@ -33,11 +33,12 @@ models:
   bank:
     # Config indicated by + and applies to all files under models/example/
     stage:
-      +materialized: view
+      +materialized: table
       +schema: stage
     intermediate:
       +materialized: table
       +schema: intermediat
     marts:
+    
       +materialized: table
       +schema: marts
