@@ -1,18 +1,2 @@
-select [EPS]
-      ,[ROA]
-      ,[ROE]
-      ,[S/N]
-      ,[Banks]
-      ,[Net Income]
-      ,[Total Asset]
-      ,[Total Capital]
-      ,[Paid-up Capital]
-      ,[Profit before tax]
-      ,[Net Income in 'USD']
-      ,[Total Asset in 'USD']
-      ,[Total Capital in 'USD']
-      ,[Paid-up Capital in 'USD']
-      ,[Profit for the year '000']
-      ,[Profit before tax in 'USD']
-      ,[Profit for the year in 'USD']
-from {{ source('bank_source', 'Banks 2022 2023') }}
+select EPS, ROA, ROE, SN, Banks, Net_Income, Total_Asset, Total_Capital, Paid_up_Capital, Profit_before_tax, Net_Income_in_USD, Total_Asset_in_USD, Total_Capital_in_USD, Paid_up_Capital_in_USD, Profit_for_the_year_000, Profit_before_tax_in_USD, Profit_for_the_year_in_USD
+from {{  source('etbanksfinancial', 'Banks_2022_2023')}}
