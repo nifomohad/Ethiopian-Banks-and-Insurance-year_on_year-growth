@@ -1,3 +1,3 @@
 select EPS, ROA, ROE, SN, Banks, Total_Asset, Total_Capital, Paid_up_Capital, Profit_before_tax, Profit_for_the_year, Total_Asset_in_USD, Total_Capital_in_USD, Paid_up_Capital_in_USD, Profit_before_tax_in_USD, Profit_for_the_year_in_USD, Comprehensive_income_for_year, Comprehensive_income_for_year_in_USD
 
-from {{  source('bank_sources', 'Banks_2023_2024')}}
+from {{  source('etbanksfinancial', 'Banks_2023_2024')}}
