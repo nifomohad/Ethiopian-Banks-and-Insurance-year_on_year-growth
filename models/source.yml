@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: DBT_REMODEL     # My database name
+    schema: RAW_DATA           # The schema where it is materialzied
+    tables:
+      - name: Bank_2022_23
+        description: Bank financial metrics for the 2022/23 fiscal year.
+      - name: Bank_2023_24
+        description: Bank financial metrics for the 2023/24 fiscal year.
