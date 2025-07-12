@@ -1,4 +1,4 @@
-{{ config(materialized='table') }}
+
 
 WITH base_2022 AS (
     SELECT
@@ -16,7 +16,7 @@ WITH base_2022 AS (
         s.profit_before_tax_usd,
         s.net_income,
         s.net_income_usd,
-        s.profit_for_the_year AS profit_for_year,  -- fixed column name here
+        s.profit_for_the_year AS profit_for_year,  
         s.profit_for_the_year_usd,
         s.roe,
         s.eps,

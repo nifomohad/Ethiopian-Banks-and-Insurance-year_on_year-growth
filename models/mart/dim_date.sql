@@ -1,4 +1,4 @@
-{{ config(materialized='table') }}
+
 
 SELECT * FROM VALUES
     (202223, '2022/23', DATE '2022-07-08', DATE '2023-07-07'),

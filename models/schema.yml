@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: stg_bank_2022_23
+    description: "Staging model for bank performance 2022/23"
+
+  - name: stg_bank_2023_24
+    description: "Staging model for bank performance 2023/24"
+
+  - name: dim_bank
+    description: "Dimension table for banks"
+    columns:
+      - name: bank_key
+        tests: [unique, not_null]
+
+  - name: dim_date
+    description: "Dimension table for fiscal years"
+    columns:
+      - name: date_key
+        tests: [unique, not_null]
+
+  - name: fct_bank_performance
+    description: "Fact table for yearly bank metrics"
+    columns:
+      - name: bank_performance_key
+        tests: [unique, not_null]

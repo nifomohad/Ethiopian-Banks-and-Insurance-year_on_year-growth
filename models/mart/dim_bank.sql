@@ -1,4 +1,4 @@
-{{ config(materialized='table') }}
+
 
 WITH banks AS (
     SELECT DISTINCT bank_name FROM {{ ref('stg_bank_2022_23') }}
